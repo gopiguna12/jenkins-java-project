@@ -3,123 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Homepage Example</title>
-    <style>
-        /* CSS styles go here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            color: #fff;
-        }
-        header {
-            padding: 20px;
-            background-color: #111;
-            text-align: center;
-        }
-        header img {
-            width: 100px;
-            height: auto;
-        }
-        nav {
-            margin-top: 20px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .hero {
-            background-image: url('hero-image.jpg'); /* Your hero image */
-            background-size: cover;
-            height: 500px; /* Adjust as needed */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-        .categories {
-            padding: 20px;
-            text-align: center;
-        }
-        .category {
-            display: inline-block;
-            margin: 0 10px;
-        }
-        .category img {
-            width: 150px;
-            height: auto;
-        }
-        .trending {
-            padding: 20px;
-            text-align: center;
-        }
-        .trending-item {
-            display: inline-block;
-            margin: 0 10px;
-        }
-        .trending-item img {
-            width: 200px;
-            height: auto;
-        }
-        footer {
-            padding: 20px;
-            background-color: #111;
-            text-align: center;
-        }
-    </style>
+    <title>RAHAM Netflix Clone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <script src="session.js"></script>
 </head>
 <body>
+    <div class="background-wrapper">
+        <img src="https://assets.nflxext.com/ffe/siteui/vlv3/85e22987-d2dd-46ca-b8b7-65cd0e31c24a/629ae878-26a7-4d88-b12b-af5018a1f7b2/US-en-20201123-popsignuptwoweeks-perspective_alpha_website_large.jpg">
+    </div>
     <header>
-        <img src="netflix-logo.png" alt="Netflix Logo">
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">TV Shows</a>
-            <a href="#">Movies</a>
-            <!-- Add more links as needed -->
-        </nav>
+        <div class="logo">
+            <img src="assets/logo.png" alt="">
+        </div>
+        <div class="profile">
+            <img src="assets/profile__logo.png" alt="">
+        </div>
     </header>
-
     <main>
-        <section class="hero">
-            <div>
-                <h1>Welcome to Netflix</h1>
-                <p>Watch anywhere. Cancel anytime.</p>
+        <div class="loginContainer">
+            <div class="logingContainer-main">
+                <div><h1>Sign In</h1></div>
+                <div class="registered-alert alert alert-success" role="alert">
+                    Successfully Registered
+                </div>
+                <form id="loginForm">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">EMAIL</label>
+                      <input name="email" type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">PASSWORD</label>
+                      <input name="password" type="password" class="form-control form-control-lg" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="mt-4 btn btn-danger btn-lg btn-block ">Submit</button>
+                    <a href="/register.html">Register</a>
+                  </form>
             </div>
-        </section>
-
-        <section class="categories">
-            <div class="category">
-                <img src="category1.jpg" alt="Category 1">
-                <h2>Category 1</h2>
-            </div>
-            <div class="category">
-                <img src="category2.jpg" alt="Category 2">
-                <h2>Category 2</h2>
-            </div>
-            <!-- Add more categories as needed -->
-        </section>
-
-        <section class="trending">
-            <div class="trending-item">
-                <img src="trending1.jpg" alt="Trending 1">
-                <h2>Trending 1</h2>
-            </div>
-            <div class="trending-item">
-                <img src="trending2.jpg" alt="Trending 2">
-                <h2>Trending 2</h2>
-            </div>
-            <!-- Add more trending items as needed -->
-        </section>
+        </div>
     </main>
-
-    <footer>
-        <p>Footer content goes here</p>
-    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
 </body>
 </html>
